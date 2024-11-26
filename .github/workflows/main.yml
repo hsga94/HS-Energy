@@ -18,3 +18,9 @@ jobs:
           site: repositorio-sgq.firebaseapp.com
           project: 1:733023742365:web:1af0a8579b3f1a66f0a774
           auth: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+
+  name: Build
+        run: npm run build
+
+  name: Deploy
+        uses: FirebaseExtended/action-hosting-deploy@v0
