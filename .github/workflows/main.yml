@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
+      - uses: GoogleCloudPlatform/github-actions/setup-gcloud@main
         with:
           service_account: 'github-action-894104225@repositorio-sgq.iam.gserviceaccount.com'
           project_id: 'repositorio-sgq'
